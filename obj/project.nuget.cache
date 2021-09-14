@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "MZB5jkMw9qyuZ0mrNR30N2J1X8ursoAJBuwveRO5q7UKQmYCvxAlgR1aBf/bbiWEKdooYRU3q182C/kDyqJRqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\persi\\OneDrive\\Документы\\GitHub\\Art-exhibition\\Art-exhibition.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\persi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\persi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\persi\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\persi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\persi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\persi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
