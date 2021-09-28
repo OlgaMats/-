@@ -32,6 +32,19 @@ namespace Art_exhibition.Controllers
             return "Метод ознакомления со сведениями о выставке";
         }
 
+        [HttpGet]
+        [Route("/client/InfoAdressTimetable")]
+        public string AdressTimetable(string str)
+        {
+            return "Метод ознакомления с адресом и расписанием";
+        }
+
+        [HttpGet]
+        [Route("/client/InfoPrices")]
+        public string InfoPrices(string str)
+        {
+            return "Метод ознакомления с адресом и расписанием";
+        }
     }
 
     [ApiController]
