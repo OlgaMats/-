@@ -45,7 +45,7 @@ namespace Art_exhibition.Controllers
             return "Метод регистрации на выставке";
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/author/Transfer")]
         public string Transfer()
         {
