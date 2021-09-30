@@ -11,8 +11,7 @@ namespace Art_exhibition.Controllers
     [Route("/client")]
     public class ClientController : ControllerBase
     {
-        [HttpGet]
-        [Route("/client/ViewingExhibits")]
+        [HttpGet("/client/ViewingExhibits")]
         public string ViewingExhibits(string str)
         {
             return "Метод выбора просмотра экспонатов";
