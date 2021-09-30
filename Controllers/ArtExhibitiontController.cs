@@ -11,35 +11,35 @@ namespace Art_exhibition.Controllers
     [Route("/client")]
     public class ClientController : ControllerBase
     {
-        [HttpGet("/client/ViewingExhibits")]
+        [HttpGet("ViewingExhibits")]
         public string ViewingExhibits(string str)
         {
             return "Метод выбора просмотра экспонатов";
         }
 
         [HttpGet]
-        [Route("/client/Review")]
+        [Route("Review")]
         public string Review(string str)
         {
             return "Метод оценки выставки";
         }
 
         [HttpGet]
-        [Route("/client/Information")]
+        [Route("Information")]
         public string Information(string str)
         {
             return "Метод ознакомления со сведениями о выставке";
         }
 
         [HttpGet]
-        [Route("/client/InfoAdressTimetable")]
+        [Route("InfoAdressTimetable")]
         public string AdressTimetable(string str)
         {
             return "Метод ознакомления с адресом и расписанием";
         }
 
         [HttpGet]
-        [Route("/client/InfoPrices")]
+        [Route("InfoPrices")]
         public string InfoPrices(string str)
         {
             return "Метод ознакомления с адресом и расписанием";
