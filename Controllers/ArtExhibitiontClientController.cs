@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,7 +14,19 @@ namespace Art_exhibition.Controllers
         [HttpGet("ViewingExhibits")]
         public string ViewingExhibits(string str)
         {
-            return str;//"Метод выбора просмотра экспонатов"
+            return str;//"Метод выбора экспонатов для просмотра"
+        }
+
+        [HttpGet("Registration")]
+        public string Registration(string str)
+        {
+            return str;//"Метод регистрации посетителя"
+        }
+
+        [HttpGet("Login")]
+        public string Login(string str)
+        {
+            return str;//"Метод рвхода в личный кабинет посетителя"
         }
 
         [HttpGet("Review")]
@@ -22,6 +34,13 @@ namespace Art_exhibition.Controllers
         {
             return str;//"Метод оценки выставки"
         }
+
+        [HttpGet("Question")]
+        public string Question(string str)
+        {
+            return str;//"Метод ооставления вопроса"
+        }
+
 
         [HttpGet("Information")]
         public string Information(string str)
@@ -38,7 +57,7 @@ namespace Art_exhibition.Controllers
         [HttpGet("InfoPrices")]
         public string InfoPrices(string str)
         {
-            return str;//"Метод ознакомления с адресом и расписанием"
+            return str;//"Метод ознакомления с ценой билетов"
         }
     }
 }

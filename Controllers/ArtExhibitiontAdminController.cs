@@ -23,10 +23,16 @@ namespace Art_exhibition.Controllers
             return str;// "Метод анализирования отзывов"
         }
 
-        [HttpGet("Timetable")]
-        public string Timetable(string str)
+        [HttpGet("Answer")]
+        public string Answer(string str)
         {
-            return str;// "Метод составления графика (расписания)"
+            return str;// "Метод ответа на вопросы"
+        }
+
+        [HttpGet("TimetableAdress")]
+        public string TimetableAdress(string str)
+        {
+            return str;// "Метод составления графика (расписания), адреса"
         }
     }
 }

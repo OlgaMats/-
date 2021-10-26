@@ -23,12 +23,6 @@ namespace Art_exhibition.Controllers
             return str;// "Метод проверки экспонатов на сохранность"
         }
 
-        [HttpGet("RegVisitors")]
-        public string RegVisitors(string str)
-        {
-            return str;// "Метод регистрации посетителей"
-        }
-
         [HttpGet("RegNewExhibits")]
         public string RegNewExhibits(string str)
         {
