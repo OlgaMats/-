@@ -8,27 +8,9 @@ using Microsoft.Extensions.Logging;
 namespace Art_exhibition.Controllers
 {
     [ApiController]
-    [Route("/staff")]
-    public class StaffController : ControllerBase
+    [Route("/author")]
+    public class AuthorController : ControllerBase
     {
-        [HttpGet("EditInformation")]
-        public string EditInformation(string str)
-        {
-            return str;// "Метод редактирования информации об экспонатах"
-        }
-
-        [HttpGet("CheckSafety")]
-        public string CheckSafety(string str)
-        {
-            return str;// "Метод проверки экспонатов на сохранность"
-        }
-
-        [HttpGet("RegNewExhibits")]
-        public string RegNewExhibits(string str)
-        {
-            return str;// "Метод регистрации новых экспонатов"
-        }
-
         [HttpPut("Create")]
         public string Create(string str)
         {
@@ -51,6 +33,18 @@ namespace Art_exhibition.Controllers
         public string Delete(string str)
         {
             return str;// Метод удаления
+        }
+
+        [HttpGet("RegAuthors")]
+        public string RegAuthors(string str)
+        {
+            return str;// "Метод регистрации на выставке"
+        }
+
+        [HttpGet("Transfer")]
+        public string Transfer(string str)
+        {
+            return str;//"Метод передачи экспонатов"
         }
     }
 }

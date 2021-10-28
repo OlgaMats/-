@@ -11,30 +11,6 @@ namespace Art_exhibition.Controllers
     [Route("/admin")]
     public class AdminController : ControllerBase
     {
-        [HttpGet("Prices")]
-        public string Prices(string str)
-        {
-            return str;//"Метод установления цен на билеты"
-        }
-
-        [HttpGet("ReviewAnalytics")]
-        public string ReviewAnalytics(string str)
-        {
-            return str;// "Метод анализирования отзывов"
-        }
-
-        [HttpGet("Answer")]
-        public string Answer(string str)
-        {
-            return str;// "Метод ответа на вопросы"
-        }
-
-        [HttpGet("TimetableAdress")]
-        public string TimetableAdress(string str)
-        {
-            return str;// "Метод составления графика (расписания), адреса"
-        }
-
         [HttpPut("Create")]
         public string Create(string str)
         {
@@ -59,4 +35,30 @@ namespace Art_exhibition.Controllers
             return str;// Метод удаления
         }
     }
+
+    [HttpGet("Prices")]
+        public string Prices(string str)
+        {
+            return str;//"Метод установления цен на билеты"
+        }
+
+        [HttpGet("ReviewAnalytics")]
+        public string ReviewAnalytics(string str)
+        {
+            return str;// "Метод анализирования отзывов"
+        }
+
+        [HttpGet("Answer")]
+        public string Answer(string str)
+        {
+            return str;// "Метод ответа на вопросы"
+        }
+
+        [HttpGet("TimetableAdress")]
+        public string TimetableAdress(string str)
+        {
+            return str;// "Метод составления графика (расписания), адреса"
+        }
+
+        
 }
