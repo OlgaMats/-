@@ -11,25 +11,25 @@ namespace Art_exhibition.Controllers
     [Route("/review")]
     public class ReviewController : ControllerBase
     {
-        [HttpPut("Create")]
+        [HttpPut]
         public string Create(string str)
         {
             return str;// Метод создания
         }
 
-        [HttpGet("Read")]
+        [HttpGet]
         public string Read(string str)
         {
             return str;// Метод чтения
         }
 
-        [HttpPatch("Update")]
+        [HttpPatch]
         public string Update(string str)
         {
             return str;// Метод обновления
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete]
         public string Delete(string str)
         {
             return str;// Метод удаления
