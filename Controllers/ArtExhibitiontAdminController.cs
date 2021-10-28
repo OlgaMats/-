@@ -34,5 +34,29 @@ namespace Art_exhibition.Controllers
         {
             return str;// "Метод составления графика (расписания), адреса"
         }
+
+        [HttpPut("Create")]
+        public string Create(string str)
+        {
+            return str;// Метод создания
+        }
+
+        [HttpGet("Read")]
+        public string Read(string str)
+        {
+            return str;// Метод чтения
+        }
+
+        [HttpPatch("Update")]
+        public string Update(string str)
+        {
+            return str;// Метод обновления
+        }
+
+        [HttpDelete("Delete")]
+        public string Delete(string str)
+        {
+            return str;// Метод удаления
+        }
     }
 }
