@@ -11,30 +11,30 @@ namespace Art_exhibition.Controllers
     [Route("/admin")]
     public class AdminController : ControllerBase
     {
-        [HttpPut()]
+        [HttpPut]
         public string Create(string str)
         {
             return str;// Метод создания
         }
 
-        [HttpGet()]
+        [HttpGet]
         public string Read(string str)
         {
             return str;// Метод чтения
         }
 
-        [HttpPatch()]
+        [HttpPatch]
         public string Update(string str)
         {
             return str;// Метод обновления
         }
 
-        [HttpDelete()]
+        [HttpDelete]
         public string Delete(string str)
         {
             return str;// Метод удаления
         }
-    }
+    
 
     [HttpGet("Prices")]
         public string Prices(string str)
@@ -59,6 +59,6 @@ namespace Art_exhibition.Controllers
         {
             return str;// "Метод составления графика (расписания), адреса"
         }
+    }
 
-        
 }
