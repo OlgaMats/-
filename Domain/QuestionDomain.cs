@@ -1,5 +1,5 @@
-﻿class Questions: Visitor
+﻿class Questions
 {
-    public string VisitorID;
+    public string Visitor { get; set; }
     public string Question { get; set; }
 }

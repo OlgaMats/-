@@ -1,6 +1,5 @@
-﻿class Requisite : Ticket
+﻿class Requisite
 {
-    public string Ticket;
     public string Adress { get; set; }
     public string Timetable { get; set; }
 }
