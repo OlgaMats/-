@@ -7,5 +7,5 @@
     public string Style { get; set; }
     public float Size { get; set; }
     public string Material { get; set; }
-    public string Author { get; set; }
+    public Author Author { get; set; }
 }
