@@ -4,15 +4,15 @@ using System.Data.SqlClient;
 
 namespace Art_exhibition.Repository
 {
-    public class AuthorStorage
+    public class RequisiteStorage
     {
-        private Dictionary<int, Author> Authors { get; set; } = new Dictionary<int, Author>();
+        private Dictionary<int, Requisite> Requisites { get; set; } = new Dictionary<int, Requisite>();
         //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
         //public AuthorStorage() => Connection.Open();
 
-        public void Create(Author author)
+        public void Create(Requisite requisite)
         {
-            Authors.Add(author.AuthorId, author);
+            Requisites.Add(requisite.RequisiteId, requisite);
             //var command = Connection.CreateCommand();
             //command.CommandText = "SELECT * FROM .....";
             //command.ExecuteNonQuery
@@ -20,20 +20,20 @@ namespace Art_exhibition.Repository
             //command.ExecuteScalar
         }
 
-        public Author Read(int authorId)
+        public Requisite Read(int requisiteId)
         {
-            return Authors[authorId];
+            return Requisites[requisiteId];
         }
 
-        public Author Update(int authorId, Author newAuthor)
+        public Requisite Update(int requisiteId, Requisite newRequisite)
         {
-            Authors[authorId] = newAuthor;
-            return Authors[authorId];
+            Requisites[requisiteId] = newRequisite;
+            return Requisites[requisiteId];
         }
 
-        public bool Delete(int authorId)
+        public bool Delete(int requisiteId)
         {
-            return Authors.Remove(authorId);
+            return Requisites.Remove(requisiteId);
         }
     }
 }

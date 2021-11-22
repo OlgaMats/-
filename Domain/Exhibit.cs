@@ -2,6 +2,7 @@
 {
     public class Exhibit
     {
+        public int ExhibitId { get; set; }
         public string Name { get; set; }
         public int Hall { get; set; }
         public int Year { get; set; }

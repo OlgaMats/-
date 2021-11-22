@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Art_exhibition.Domain;
+using Art_exhibition.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -13,15 +15,16 @@ namespace Art_exhibition.Controllers
     {
 
         [HttpPut]
-        public string Create(string str)
+        public Staff Create(Staff staff)
         {
-            return str;// Метод создания
+           Storage.StaffStorage.Create(staff);// Метод создания
+            return staff;
         }
 
         [HttpGet]
-        public string Read(string str)
+        public Staff Read(int staffId)
         {
-            return str;// Метод чтения
+            return Storage.StaffStorage.Read(staffId);
         }
 
         [HttpPatch]

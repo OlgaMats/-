@@ -2,25 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Art_exhibition.Domain;
+using Art_exhibition.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Art_exhibition.Controllers
 {
     [ApiController]
-    [Route("/client")]
-    public class ClientController : ControllerBase
+    [Route("/visitor")]
+    public class VisitorController : ControllerBase
     {
         [HttpPut]
-        public string Create(string str)
+        public Visitor Create(Visitor visitor)
         {
-            return str;// Метод создания
+            Storage.VisitorStorage.Create(visitor);
+            return visitor;
         }
 
         [HttpGet]
-        public string Read(string str)
+        public Visitor Read(int visitorId)
         {
-            return str;// Метод чтения
+            return Storage.VisitorStorage.Read(visitorId);// Метод чтения
         }
 
         [HttpPatch]

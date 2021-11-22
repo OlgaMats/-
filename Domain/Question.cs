@@ -1,8 +1,9 @@
 ﻿namespace Art_exhibition.Domain
 {
-    public class Questions
+    public class Question
     {
+        public int QuestionId { get; set; }
         public string Visitor { get; set; }
-        public string Question { get; set; }
+        public string Matters { get; set; }
     }
 }

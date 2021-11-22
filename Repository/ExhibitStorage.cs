@@ -4,15 +4,15 @@ using System.Data.SqlClient;
 
 namespace Art_exhibition.Repository
 {
-    public class AuthorStorage
+    public class ExhibitStorage
     {
-        private Dictionary<int, Author> Authors { get; set; } = new Dictionary<int, Author>();
+        private Dictionary<int, Exhibit> Exhibits { get; set; } = new Dictionary<int, Exhibit>();
         //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
         //public AuthorStorage() => Connection.Open();
 
-        public void Create(Author author)
+        public void Create(Exhibit exhibit)
         {
-            Authors.Add(author.AuthorId, author);
+            Exhibits.Add(exhibit.ExhibitId, exhibit);
             //var command = Connection.CreateCommand();
             //command.CommandText = "SELECT * FROM .....";
             //command.ExecuteNonQuery
@@ -20,20 +20,20 @@ namespace Art_exhibition.Repository
             //command.ExecuteScalar
         }
 
-        public Author Read(int authorId)
+        public Exhibit Read(int exhibitId)
         {
-            return Authors[authorId];
+            return Exhibits[exhibitId];
         }
 
-        public Author Update(int authorId, Author newAuthor)
+        public Exhibit Update(int exhibitId, Exhibit newExhibit)
         {
-            Authors[authorId] = newAuthor;
-            return Authors[authorId];
+            Exhibits[exhibitId] = newExhibit;
+            return Exhibits[exhibitId];
         }
 
-        public bool Delete(int authorId)
+        public bool Delete(int exhibitId)
         {
-            return Authors.Remove(authorId);
+            return Exhibits.Remove(exhibitId);
         }
     }
 }

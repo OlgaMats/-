@@ -1,18 +1,17 @@
 ﻿using Art_exhibition.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 
 namespace Art_exhibition.Repository
 {
-    public class AuthorStorage
+    public class StaffStorage
     {
-        private Dictionary<int, Author> Authors { get; set; } = new Dictionary<int, Author>();
+        private Dictionary<int, Staff> Staffs { get; set; } = new Dictionary<int, Staff>();
         //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
         //public AuthorStorage() => Connection.Open();
 
-        public void Create(Author author)
+        public void Create(Staff staff)
         {
-            Authors.Add(author.AuthorId, author);
+            Staffs.Add(staff.StaffId, staff);
             //var command = Connection.CreateCommand();
             //command.CommandText = "SELECT * FROM .....";
             //command.ExecuteNonQuery
@@ -20,20 +19,20 @@ namespace Art_exhibition.Repository
             //command.ExecuteScalar
         }
 
-        public Author Read(int authorId)
+        public Staff Read(int staffId)
         {
-            return Authors[authorId];
+            return Staffs[staffId];
         }
 
-        public Author Update(int authorId, Author newAuthor)
+        public Staff Update(int staffId, Staff newStaff)
         {
-            Authors[authorId] = newAuthor;
-            return Authors[authorId];
+            Staffs[staffId] = newStaff;
+            return Staffs[staffId];
         }
 
-        public bool Delete(int authorId)
+        public bool Delete(int staffId)
         {
-            return Authors.Remove(authorId);
+            return Staffs.Remove(staffId);
         }
     }
 }

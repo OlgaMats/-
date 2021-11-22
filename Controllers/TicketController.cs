@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Art_exhibition.Domain;
+using Art_exhibition.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,15 +14,16 @@ namespace Art_exhibition.Controllers
     public class TicketController : ControllerBase
     {
         [HttpPut]
-        public string Create(string str)
+        public Ticket Create(Ticket ticket)
         {
-            return str;// Метод создания
+            Storage.TicketStorage.Create(ticket);
+            return ticket;// Метод создания
         }
 
         [HttpGet]
-        public string Read(string str)
+        public Ticket Read(int ticketId)
         {
-            return str;// Метод чтения
+            return Storage.TicketStorage.Read(ticketId);// Метод чтения
         }
 
         [HttpPatch]

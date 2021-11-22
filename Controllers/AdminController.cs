@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Art_exhibition.Domain;
+using Art_exhibition.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,15 +14,16 @@ namespace Art_exhibition.Controllers
     public class AdminController : ControllerBase
     {
         [HttpPut]
-        public string Create(string str)
+        public Admin Create(Admin admin)
         {
-            return str;// Метод создания
+            Storage.AdminStorage.Create(admin);
+            return admin;
         }
 
         [HttpGet]
-        public string Read(string str)
+        public Admin Read(int adminId)
         {
-            return str;// Метод чтения
+            return Storage.AdminStorage.Read(adminId);
         }
 
         [HttpPatch]

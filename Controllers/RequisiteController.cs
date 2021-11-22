@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Art_exhibition.Domain;
+using Art_exhibition.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,15 +14,16 @@ namespace Art_exhibition.Controllers
     public class RequisiteController : ControllerBase
     {
         [HttpPut]
-        public string Create(string str)
+        public Requisite Create(Requisite requisite)
         {
-            return str;// Метод создания
+            Storage.RequisiteStorage.Create(requisite);
+            return requisite;// Метод создания
         }
 
         [HttpGet]
-        public string Read(string str)
+        public Requisite Read(int requisiteId)
         {
-            return str;// Метод чтения
+            return Storage.RequisiteStorage.Read(requisiteId);// Метод чтения
         }
 
         [HttpPatch]
