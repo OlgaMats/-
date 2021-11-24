@@ -6,7 +6,7 @@ namespace Art_exhibition.Repository
 {
     public class AdminStorage
     {
-        private Dictionary<int, Admin> Admins { get; set; } = new Dictionary<int, Admin>();
+        private Dictionary<int, Admin> Admins { get; } = new Dictionary<int, Admin>();
         //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
         //public AuthorStorage() => Connection.Open();
 

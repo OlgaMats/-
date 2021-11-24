@@ -8,5 +8,7 @@
         public string Country { get; set; }
         public string City { get; set; }
         public object Selfie { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }
