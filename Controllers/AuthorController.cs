@@ -27,15 +27,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Author Update(int authorId, Author newAuthor)
         {
-            return str;// Метод обновления
+           return Storage.AuthorStorage.Update(authorId,newAuthor);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int authorId)
         {
-            return str;// Метод удаления
+            return Storage.AuthorStorage.Delete(authorId);
         }
 
         [HttpGet("RegAuthors")]

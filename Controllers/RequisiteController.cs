@@ -27,15 +27,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Requisite Update(int requisiteId, Requisite newRequisite)
         {
-            return str;// Метод обновления
+            return Storage.RequisiteStorage.Update(requisiteId, newRequisite);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int requisiteId)
         {
-            return str;// Метод удаления
+            return Storage.RequisiteStorage.Delete(requisiteId);
         }
     }
 }

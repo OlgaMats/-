@@ -27,15 +27,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Visitor Update(int visitorId, Visitor newVisitor)
         {
-            return str;// Метод обновления
+            return Storage.VisitorStorage.Update(visitorId, newVisitor);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int visitorId)
         {
-            return str;// Метод удаления
+            return Storage.VisitorStorage.Delete(visitorId);
         }
 
         [HttpGet("ViewingExhibits")]

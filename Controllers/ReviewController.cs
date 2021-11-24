@@ -27,15 +27,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Review Update(int reviewId, Review newReview)
         {
-            return str;// Метод обновления
+            return Storage.ReviewStorage.Update(reviewId, newReview);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int reviewId)
         {
-            return str;// Метод удаления
+            return Storage.ReviewStorage.Delete(reviewId);
         }
     }
 }

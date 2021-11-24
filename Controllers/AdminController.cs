@@ -27,19 +27,19 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Admin Update(int adminId, Admin newAdmin)
         {
-            return str;// Метод обновления
+            return Storage.AdminStorage.Update(adminId,newAdmin);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int adminId)
         {
-            return str;// Метод удаления
+            return Storage.AdminStorage.Delete(adminId);
         }
-    
 
-    [HttpGet("Prices")]
+
+        [HttpGet("Prices")]
         public string Prices(string str)
         {
             return str;//"Метод установления цен на билеты"

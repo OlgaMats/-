@@ -28,15 +28,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Staff Update(int staffId, Staff newStaff)
         {
-            return str;// Метод обновления
+            return Storage.StaffStorage.Update(staffId, newStaff);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int staffId)
         {
-            return str;// Метод удаления
+            return Storage.StaffStorage.Delete(staffId);
         }
 
         [HttpGet("EditInformation")]

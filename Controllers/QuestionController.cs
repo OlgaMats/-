@@ -27,15 +27,15 @@ namespace Art_exhibition.Controllers
         }
 
         [HttpPatch]
-        public string Update(string str)
+        public Question Update(int questionId, Question newQuestion)
         {
-            return str;// Метод обновления
+            return Storage.QuestionStorage.Update(questionId, newQuestion);
         }
 
         [HttpDelete]
-        public string Delete(string str)
+        public bool Delete(int questionId)
         {
-            return str;// Метод удаления
+            return Storage.QuestionStorage.Delete(questionId);
         }
     }
 }
