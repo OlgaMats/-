@@ -6,7 +6,7 @@ namespace Art_exhibition.Repository
 {
     public class RequisiteStorage
     {
-        private Dictionary<int, Requisite> Requisites { get; } = new Dictionary<int, Requisite>();
+        private readonly Dictionary<int, Requisite> Requisites = new();
         //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
         //public AuthorStorage() => Connection.Open();
 

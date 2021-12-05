@@ -1,15 +1,15 @@
 namespace Art_exhibition.Repository
 {
-    public static class Storage
+    public class Storage
     {
-        public static AuthorStorage AuthorStorage { get;  } = new AuthorStorage();
-        public static VisitorStorage VisitorStorage { get;  } = new VisitorStorage();
-        public static AdminStorage AdminStorage { get;  } = new AdminStorage();
-        public static StaffStorage StaffStorage { get;  } = new StaffStorage();
-        public static ExhibitStorage ExhibitStorage { get; } = new ExhibitStorage();
-        public static QuestionStorage QuestionStorage { get; } = new QuestionStorage();
-        public static RequisiteStorage RequisiteStorage { get; } = new RequisiteStorage();
-        public static ReviewStorage ReviewStorage { get; } = new ReviewStorage();
-        public static TicketStorage TicketStorage { get; } = new TicketStorage();
+        public static readonly AuthorStorage AuthorStorage = new();
+        public static readonly VisitorStorage VisitorStorage = new();
+        public static readonly AdminStorage AdminStorage = new();
+        public static readonly StaffStorage StaffStorage = new();
+        public static readonly ExhibitStorage ExhibitStorage = new();
+        public static readonly QuestionStorage QuestionStorage = new();
+        public static readonly RequisiteStorage RequisiteStorage = new();
+        public static readonly ReviewStorage ReviewStorage = new();
+        public static readonly TicketStorage TicketStorage = new();
     }
 }

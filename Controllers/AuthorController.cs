@@ -17,7 +17,7 @@ namespace Art_exhibition.Controllers
         public Author Create(Author author)
         {
             Storage.AuthorStorage.Create(author);
-            return author;
+            return Storage.AuthorStorage.Read(author.AuthorId);
         }
 
         [HttpGet]
