@@ -1,6 +1,6 @@
 namespace Art_exhibition.Repository
 {
-    public class Storage
+    public static class Storage
     {
         public static readonly AuthorStorage AuthorStorage = new();
         public static readonly VisitorStorage VisitorStorage = new();

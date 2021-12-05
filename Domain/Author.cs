@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿using Art_exhibition.Repository;
 namespace Art_exhibition.Domain
 {
     public class Author
