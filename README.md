@@ -138,10 +138,15 @@
 ![image](https://user-images.githubusercontent.com/90477769/144916076-c2eaa1f6-d5e3-47fe-be3d-4fe98a94c569.png)
 
 1) Create позволяет добавлять новые строки в вашу таблицу.
-![image](https://user-images.githubusercontent.com/90477769/144916544-28250a51-e4c2-434f-bedb-1ae6e1cfaf36.png)
+![image](https://user-images.githubusercontent.com/90477769/144917590-e4bb58f0-7935-4cec-a57d-d20414f1a518.png)
 
-Введем необходимые данные об авторе
+Введём необходимые данные об авторе в соответствующие поля.
+![image](https://user-images.githubusercontent.com/90477769/144918205-45978079-6c68-47c0-8b7b-22c35256b8a1.png)
 
+После успешного выполнения операции ответ сервера выглядит так:
+![image](https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png)
+
+2) 
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
