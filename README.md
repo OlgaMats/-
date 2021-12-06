@@ -147,6 +147,7 @@
 ![image](https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png)
 
 2) Функция чтения Read похожа на функцию поиска, поскольку позволяет извлекать определенные записи и считывать их значения.
+
 ![image](https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png)
 
 Считаем информацию об уже созданном авторе по его Id
@@ -156,12 +157,18 @@
 ![image](https://user-images.githubusercontent.com/90477769/144922666-7bfb2b20-e437-44c0-854c-d348933175c7.png)
 
 3) Update, изменение существующей записи. Мы можем использовать это для изменения существующих записей в базе данных.
-![image](https://user-images.githubusercontent.com/90477769/144922852-60f58217-1902-4fa0-9c08-49767214a870.png)
+![image](https://user-images.githubusercontent.com/90477769/144923637-12647088-b199-41c0-a05b-a241792af51a.png)
 
 Изменим информацию об авторе, для этого нужно ввести его номер и ввести новые данные
-![image](https://user-images.githubusercontent.com/90477769/144923268-8255a86e-4211-4701-8aa9-f846b35b47c9.png)
+![image](https://user-images.githubusercontent.com/90477769/144923909-f62104f4-1e1f-41b8-bd9b-ca44a12700e1.png)
 
-После выполнения
+После выполнения операции сервер выдаёт новую информацию о том же авторе
+![image](https://user-images.githubusercontent.com/90477769/144924009-de2ef562-69bc-4204-8e82-19374ac1709f.png)
+
+Функцией read проверим это. После срабатывания сервер выдает новую информацию об авторе
+![image](https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png)
+
+
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
