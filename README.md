@@ -120,7 +120,7 @@
 ![image](https://user-images.githubusercontent.com/90477769/144872621-212c3013-4617-458d-9918-47ddc38f5382.png)
 
 На основе данной диаграммы разрабатвается DFD.
-![image](https://user-images.githubusercontent.com/90477769/144912369-eb9a350b-e228-42cc-b85c-00bf3201cf8d.png)\
+![image](https://user-images.githubusercontent.com/90477769/144913829-03911cd7-25cb-4127-9e44-115defa8849d.png)
 
 На основе DFD  разрабатывается схема «сущность-связь» (ER-диаграмма), где показано, как разные «сущности» (люди, объекты, концепции и так далее) связаны между собой внутри системы.
 ![image](https://user-images.githubusercontent.com/90477769/144912943-027cbcd9-04fc-4e13-9890-ba8bc5f31d5f.png)
