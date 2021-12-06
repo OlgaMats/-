@@ -147,7 +147,6 @@
 ![image](https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png)
 
 2) Функция чтения Read похожа на функцию поиска, поскольку позволяет извлекать определенные записи и считывать их значения.
-
 ![image](https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png)
 
 Считаем информацию об уже созданном авторе по его Id
@@ -168,7 +167,7 @@
 Функцией read проверим это. После срабатывания сервер выдает новую информацию об авторе
 ![image](https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png)
 
-
+4) Delete - используется для удаления записи по Id. 
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
