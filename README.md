@@ -177,10 +177,10 @@
 ![image](https://user-images.githubusercontent.com/90477769/144927692-77abb517-f2e7-43d9-8d25-a13c5bb51fe3.png)
 
 Проверим это с помощью read, считаем информацию об авторе, котрого удалили
+![image](https://user-images.githubusercontent.com/90477769/144929588-96e2f936-87dd-4f09-8a69-c0f7571bf3ea.png)
 
-После срабатывания
-![2021-12-07_00-50-02](https://user-images.githubusercontent.com/90477769/144928460-9afc64cb-7c1b-4b18-8fc3-274c27123b35.png)
-
+После срабатывания программа не выдаёт информации об этом авторе
+![image](https://user-images.githubusercontent.com/90477769/144929380-5666d528-52ec-46fa-979e-cd3a4db56fd9.png)
 
 ***
 ## Cписок литературы <a name="список_литературы"></a>
