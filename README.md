@@ -167,7 +167,21 @@
 Функцией read проверим это. После срабатывания сервер выдает новую информацию об авторе
 ![image](https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png)
 
-4) Delete - используется для удаления записи по Id. 
+4) Delete - используется для удаления записи по Id. Если операция удаления сработает успешно, то ответ сервера будет "true", иначе "false"
+![image](https://user-images.githubusercontent.com/90477769/144926022-93826b7d-8fbc-40b5-b56c-613c875e9cbd.png)
+
+Удалим автора по его Id
+![image](https://user-images.githubusercontent.com/90477769/144926674-fb94a0ac-c3f5-447d-8c38-3c6c53974b15.png)
+
+После выполнения операции оответ сервера:
+![image](https://user-images.githubusercontent.com/90477769/144927692-77abb517-f2e7-43d9-8d25-a13c5bb51fe3.png)
+
+Проверим это с помощью read, считаем информацию об авторе, котрого удалили
+
+После срабатывания
+![2021-12-07_00-50-02](https://user-images.githubusercontent.com/90477769/144928460-9afc64cb-7c1b-4b18-8fc3-274c27123b35.png)
+
+
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
