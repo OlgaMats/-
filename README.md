@@ -123,7 +123,7 @@
 ![image](https://user-images.githubusercontent.com/90477769/144913829-03911cd7-25cb-4127-9e44-115defa8849d.png)
 
 На основе DFD  проектируется схема «сущность-связь» (ER-диаграмма), где показано, как разные «сущности» (люди, объекты, концепции и так далее) связаны между собой внутри системы.
-![image](https://user-images.githubusercontent.com/90477769/144912943-027cbcd9-04fc-4e13-9890-ba8bc5f31d5f.png)
+![2021-12-06_23-24-37](https://user-images.githubusercontent.com/90477769/144917166-1aa22b4b-ec4b-4db2-957c-1a95bbc45d02.png)
 
 ***
 ### 3.1 Проектирование системы <a name="проектирование"></a>
@@ -131,6 +131,17 @@
 ### 3.2 Реализация системы <a name="реализация"></a>
 
 ## 4 Тестирование <a name="тестирование"></a>
+После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними.
+![image](https://user-images.githubusercontent.com/90477769/144915387-4f150cce-3b39-4c30-8a12-34d5010be487.png)
+
+Проверим работу методов CRUD в сущности Author.
+![image](https://user-images.githubusercontent.com/90477769/144916076-c2eaa1f6-d5e3-47fe-be3d-4fe98a94c569.png)
+
+1) Create позволяет добавлять новые строки в вашу таблицу.
+![image](https://user-images.githubusercontent.com/90477769/144916544-28250a51-e4c2-434f-bedb-1ae6e1cfaf36.png)
+
+Введем необходимые данные об авторе
+
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
