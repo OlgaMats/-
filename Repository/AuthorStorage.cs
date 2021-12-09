@@ -11,28 +11,24 @@ namespace Art_exhibition.Repository
         private readonly Dictionary<int, Author > Authors = new ();
         private SqlConnection Connection { get; } = new SqlConnection(@"Server=DESKTOP-9FJOISL\SQLEXPRESS;Database=Art-Exhibition;User Id=sa;Password=123;");
         public AuthorStorage() => Connection.Open();
-        //private SqlConnection Connection { get; } = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
-        //public AuthorStorage() => Connection.Open();
 
         public Author Create(Author author)
         {
-            // var connectionId = _connections.Keys.Last() + 1;
-            var authorId = Authors.Keys.Max() + 1;
-            author.AuthorId = authorId;
+            //var authorId = Authors.Keys.Last() + 1;
+            //var authorId = Authors.Keys.Max() + 1;
+            //author.AuthorId = authorId;
             Authors.Add(author.AuthorId, author);
             return author;
+        }   
             //var command = Connection.CreateCommand();
             //command.CommandText = "SELECT * FROM dbo.Author WHERE authorId = @AuthorId";
             //command.ExecuteNonQuery();
             //command.ExecuteReader();
             //command.ExecuteScalar();
-        }
 
         public Author Read(int authorId)
         {
-            var command = Connection.CreateCommand();
-            command.CommandText = "SELECT * FROM dbo.Author WHERE authorId = @AuthorId";
-            return Authors[authorId];
+                return Authors[authorId];
         }
 
         public Author Update(int authorId, Author newAuthor)
