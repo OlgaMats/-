@@ -190,8 +190,8 @@
 
 ***
 ## Cписок литературы <a name="список_литературы"></a>
-[1] - https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
-[2] - https://translated.turbopages.org/proxy_u/en-ru.ru.c5f0a833-619d664c-6ce4490f-74722d776562/https/en.wikipedia.org/wiki/Art_exhibition  
+[1] Виды выставок [электронный ресурс] - Режим доступа: https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/  
+[2] - Режим доступа: https://translated.turbopages.org/proxy_u/en-ru.ru.c5f0a833-619d664c-6ce4490f-74722d776562/https/en.wikipedia.org/wiki/Art_exhibition  
 [3] - ОСТ 108.007.02-84 Научно-технические выставки.  
 [4] - https://studfile.net/preview/5150133/page:22/#:~:text=%2B%20%2B%20Выставка%20–%20комплексное,фирмы%20для%20удовлетворения%20запросов%20потребителей  
 [5] - https://w.histrf.ru/articles/article/show/promyshliennyie_vystavki#:~:text=Промышленные%20выставки%20-%20публичные%20конкурсные,техники%2C%20военного%20дела%20и%20искусства  
