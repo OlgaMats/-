@@ -192,8 +192,8 @@
 ## Cписок литературы <a name="список_литературы"></a>
 [1] Виды выставок [электронный ресурс] - Режим доступа: https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/   
 [2] - ОСТ 108.007.02-84 Научно-технические выставки [текст].  
-[3] - https://studfile.net/preview/5150133/page:22/#:~:text=%2B%20%2B%20Выставка%20–%20комплексное,фирмы%20для%20удовлетворения%20запросов%20потребителей  
-[4] - https://w.histrf.ru/articles/article/show/promyshliennyie_vystavki#:~:text=Промышленные%20выставки%20-%20публичные%20конкурсные,техники%2C%20военного%20дела%20и%20искусства  
-[5] - https://cyberleninka.ru/article/n/torgovye-vystavki-rol-klassifikatsiya-organizatory-i-uchastniki#:~:text=Торговая%20выставка%20(оптовая%20ярмарка)%20-,и%20розничная%20торговля%20на%20улицах  
-[6] - https://cyberleninka.ru/article/n/obrazovatelnaya-vystavka-kak-faktor-innovatsiy  
-[7] - http://www.lomonosov-fund.ru/enc/ru/encyclopedia:0131988  
+[3] Тема 5.5 выставки как средство рекламной деятельности [электронный ресурс] - Режим доступа: https://studfile.net/preview/5150133/page:22/#:~:text=%2B%20%2B%20Выставка%20–%20комплексное,фирмы%20для%20удовлетворения%20запросов%20потребителей  
+[4] ПРОМЫШЛЕННЫЕ ВЫСТАВКИ - публичные конкурсные показы изделий, сырья, полуфабрикатов и других предметов [электронный ресурс] - Режим доступа: https://w.histrf.ru/articles/article/show/promyshliennyie_vystavki#:~:text=Промышленные%20выставки%20-%20публичные%20конкурсные,техники%2C%20военного%20дела%20и%20искусства  
+[5] Торговые выставки: роль, классификация, организаторы и участники [электронный ресурс] - https://cyberleninka.ru/article/n/torgovye-vystavki-rol-klassifikatsiya-organizatory-i-uchastniki#:~:text=Торговая%20выставка%20(оптовая%20ярмарка)%20-,и%20розничная%20торговля%20на%20улицах  
+[6] Образовательная выставка как фактор инноваций [электронный ресурс] - Режим доступа: https://cyberleninka.ru/article/n/obrazovatelnaya-vystavka-kak-faktor-innovatsiy  
+[7] Типология художественных выставок - Энциклопедия - Фонд знаний "Ломоносов" [электронный ресурс] - Режим доступа: http://www.lomonosov-fund.ru/enc/ru/encyclopedia:0131988  
