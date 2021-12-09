@@ -136,6 +136,15 @@
 
 ***
 ### 3.2 Реализация системы <a name="реализация"></a>
+Листинг 1 - Класс "Администратор"
+```csharp
+    public class Admin
+    {
+        public int AdminId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+```
 
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними.
