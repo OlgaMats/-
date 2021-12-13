@@ -151,19 +151,29 @@
 
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними.
-![image](https://user-images.githubusercontent.com/90477769/144915387-4f150cce-3b39-4c30-8a12-34d5010be487.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144915387-4f150cce-3b39-4c30-8a12-34d5010be487.png"></p>
+<p align="center">Рисунок 4 - Cтраница Swagger UI</p> 
 
 Проверка работы методов CRUD (Create - создание, Read - чтение, Update - обновление, Delete - удаление) в сущности Author.
-![image](https://user-images.githubusercontent.com/90477769/144916076-c2eaa1f6-d5e3-47fe-be3d-4fe98a94c569.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144916076-c2eaa1f6-d5e3-47fe-be3d-4fe98a94c569.png"></p>
+<p align="center">Рисунок 5 -Проверка работы методов CRUD</p> 
 
 1) Create позволяет добавлять новые строки в вашу таблицу.
-![image](https://user-images.githubusercontent.com/90477769/144917590-e4bb58f0-7935-4cec-a57d-d20414f1a518.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144917590-e4bb58f0-7935-4cec-a57d-d20414f1a518.png"></p>
+<p align="center">Рисунок 6 - Метод create</p> 
 
 Ввод необходимых данных об авторе в соответствующие поля.
-![image](https://user-images.githubusercontent.com/90477769/144918205-45978079-6c68-47c0-8b7b-22c35256b8a1.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144918205-45978079-6c68-47c0-8b7b-22c35256b8a1.png"></p>
+<p align="center">Рисунок 7 - Ввод данных</p> 
 
 После успешного выполнения операции ответ сервера выглядит так:
-![image](https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png"></p>
+<p align="center">Рисунок 8 - Результат выполнения операции</p> 
 
 2) Функция чтения Read похожа на функцию поиска, поскольку позволяет извлекать определенные записи и считывать их значения.
 ![image](https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png)
