@@ -163,53 +163,77 @@
 1) Create позволяет добавлять новые строки в вашу таблицу.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/90477769/144917590-e4bb58f0-7935-4cec-a57d-d20414f1a518.png"></p>
-<p align="center">Рисунок 6 - Метод create</p> 
+<p align="center">Рисунок 6 - Окно метода создания</p> 
 
 Ввод необходимых данных об авторе в соответствующие поля.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/90477769/144918205-45978079-6c68-47c0-8b7b-22c35256b8a1.png"></p>
-<p align="center">Рисунок 7 - Ввод данных</p> 
+<p align="center">Рисунок 7 - Работа с методом создания</p> 
 
-После успешного выполнения операции ответ сервера выглядит так:
+После успешного выполнения операции сервер выдаёт ответ.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/90477769/144918063-f3484a61-a0c0-4193-8e8a-baf922a855af.png"></p>
-<p align="center">Рисунок 8 - Результат выполнения операции</p> 
+<p align="center">Рисунок 8 - Результат выполнения операции создания</p> 
 
 2) Функция чтения Read похожа на функцию поиска, поскольку позволяет извлекать определенные записи и считывать их значения.
-![image](https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png"></p>
+<p align="center">Рисунок 9 - Окно функции чтения</p> 
 
 Считывание информации об уже созданном авторе по его Id
-![image](https://user-images.githubusercontent.com/90477769/144922348-b7a0767c-0361-4c1c-bd7c-d65c7f601e52.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922348-b7a0767c-0361-4c1c-bd7c-d65c7f601e52.png"></p>
+<p align="center">Рисунок 10 - Работа с методом чтения</p> 
 
 После выполнения операции сервер выдаёт об авторе информацию, которая была создана в Create
-![image](https://user-images.githubusercontent.com/90477769/144922666-7bfb2b20-e437-44c0-854c-d348933175c7.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922666-7bfb2b20-e437-44c0-854c-d348933175c7.png"></p>
+<p align="center">Рисунок 11 - Результат выполнения операции чтения</p> 
 
-3) Update, редактирование существующей записи. Используется для изменения существующих записей в базе данных.
-![image](https://user-images.githubusercontent.com/90477769/144923637-12647088-b199-41c0-a05b-a241792af51a.png)
+3) Update, редактирование записи. Используется для изменения существующих записей в базе данных.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144923637-12647088-b199-41c0-a05b-a241792af51a.png"></p>
+<p align="center">Рисунок 12 - Окно метода обновления</p> 
 
 Измениение информации об авторе, для этого сначала нужно ввести его номер и затем новые данные
-![image](https://user-images.githubusercontent.com/90477769/144923909-f62104f4-1e1f-41b8-bd9b-ca44a12700e1.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144923909-f62104f4-1e1f-41b8-bd9b-ca44a12700e1.png"></p>
+<p align="center">Рисунок 13 - Работа с методом обновления</p> 
 
 После выполнения операции сервер выдаёт новую информацию о том же авторе
-![image](https://user-images.githubusercontent.com/90477769/144924009-de2ef562-69bc-4204-8e82-19374ac1709f.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144924009-de2ef562-69bc-4204-8e82-19374ac1709f.png"></p>
+<p align="center">Рисунок 14 - Результат выполнения операции обновления</p> 
 
 Функцией read проверка вышеуказанной операции. После срабатывания сервер выдает новую информацию об авторе
-![image](https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png"></p>
+<p align="center">Рисунок 15 - Результат выполнения операции чтения после обновления данных</p> 
 
 4) Delete - используется для удаления записи по Id. Если операция удаления сработает успешно, то ответ сервера будет "true", иначе "false"
-![image](https://user-images.githubusercontent.com/90477769/144926022-93826b7d-8fbc-40b5-b56c-613c875e9cbd.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144926022-93826b7d-8fbc-40b5-b56c-613c875e9cbd.png"></p>
+<p align="center">Рисунок 16 - Окно метода удаления</p> 
 
 Удаление автора по его Id
-![image](https://user-images.githubusercontent.com/90477769/144926674-fb94a0ac-c3f5-447d-8c38-3c6c53974b15.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144926674-fb94a0ac-c3f5-447d-8c38-3c6c53974b15.png"></p>
+<p align="center">Рисунок 17 - Работа с методом удаления</p> 
 
 После выполнения операции ответ сервера:
-![image](https://user-images.githubusercontent.com/90477769/144927692-77abb517-f2e7-43d9-8d25-a13c5bb51fe3.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144927692-77abb517-f2e7-43d9-8d25-a13c5bb51fe3.png"></p>
+<p align="center">Рисунок 18 - Раезультат выполнения метода удаления</p> 
 
 Проверка вышеописанного действия с помощью read, считывание информацию об удалённом авторе
-![image](https://user-images.githubusercontent.com/90477769/144929588-96e2f936-87dd-4f09-8a69-c0f7571bf3ea.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144929588-96e2f936-87dd-4f09-8a69-c0f7571bf3ea.png"></p>
+<p align="center">Рисунок 19 - Работа с операцией чтения</p> 
 
 После срабатывания программа не выдаёт информации об этом авторе
-![image](https://user-images.githubusercontent.com/90477769/144929380-5666d528-52ec-46fa-979e-cd3a4db56fd9.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144929380-5666d528-52ec-46fa-979e-cd3a4db56fd9.png"></p>
+<p align="center">Рисунок 20 - Результат выполнения операции чтения после удаления данных</p> 
 ***
 ## Cписок литературы <a name="список_литературы"></a>
 [1] Виды выставок [электронный ресурс] // АО «ЭКСПОЦЕНТР» выставочная компания, выставки Москвы 2021 - Москва, 2021. - Режим доступа: https://www.expocentr.ru/ru/articles-of-exhibitions/vidy-vystavok/, свободный (дата обращения 24.11.2021).  
