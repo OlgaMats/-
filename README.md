@@ -139,7 +139,7 @@
 
 ***
 ### 3.2 Реализация системы <a name="реализация"></a>
-На основании ER-диаграммы
+На основании ER-диаграммы создали классы. Примеры классов Администратор и Экспонаты представленны на Листингах 1 и 2 соответственно.
 Листинг 1 - Класс "Администратор"
 ```csharp
     public class Admin
@@ -149,7 +149,22 @@
         public string LastName { get; set; }
     }
 ```
-
+Листинг 2 - Класс "Экспонаты"
+```csharp
+public class Exhibit
+    {
+        public int ExhibitId { get; set; }
+        public string Name { get; set; }
+        public int Hall { get; set; }
+        public int Year { get; set; }
+        public CountryCreation Country { get; set; }
+        public Style Style { get; set; }
+        public float Size { get; set; }
+        public Material Material { get; set; }
+        public Author Author { get; set; }
+    }
+```
+Затем отпределили где они будут храниться, создав репозитории. Один является общим хранилищем для 
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними (см. рисунок 4).
 <p align="center">
