@@ -139,14 +139,18 @@
 
 ***
 ### 3.2 Реализация системы <a name="реализация"></a>
-На основании ER-диаграммы создали классы. Примеры классов Администратор и Экспонаты представленны на Листингах 1 и 2 соответственно.
-Листинг 1 - Класс "Администратор"
+На основании ER-диаграммы создали классы. Примеры классов Администратор и Экспонаты представленны на листингах 1 и 2 соответственно.
+Листинг 1 - Класс "Автор"
 ```csharp
-    public class Admin
+    public class Author
     {
-        public int AdminId { get; set; }
+        public int AuthorId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Country { get; set; }
+        public string City { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 ```
 Листинг 2 - Класс "Экспонаты"
@@ -164,7 +168,52 @@ public class Exhibit
         public Author Author { get; set; }
     }
 ```
-Затем отпределили где они будут храниться, создав репозитории. Один является общим хранилищем для 
+Затем отпределили где они будут храниться, создав репозитории, пример на листинге 3, один из которых является общим хранилищем, он представлен на листинге 4.
+Листинг 3 - Репозиторий для класса "Автор"
+```csharp
+    public class AuthorStorage
+    {
+        private readonly Dictionary<int, Author > Authors = new ();
+
+        public Author Create(Author author)
+        {
+            Authors.Add(author.AuthorId, author);
+            return author;
+        }   
+
+        public Author Read(int authorId)
+        {
+                return Authors[authorId];
+        }
+
+        public Author Update(int authorId, Author newAuthor)
+        {
+            Authors[authorId] = newAuthor;
+            return Authors[authorId];
+        }
+
+        public bool Delete(int authorId)
+        {
+            return Authors.Remove(authorId);
+        }
+    }
+```
+Листинг 4 - Общеее хранилище
+```csharp
+public static class Storage
+    {
+        public static readonly AuthorStorage AuthorStorage = new();
+        public static readonly VisitorStorage VisitorStorage = new();
+        public static readonly AdminStorage AdminStorage = new();
+        public static readonly StaffStorage StaffStorage = new();
+        public static readonly ExhibitStorage ExhibitStorage = new();
+        public static readonly QuestionStorage QuestionStorage = new();
+        public static readonly RequisiteStorage RequisiteStorage = new();
+        public static readonly ReviewStorage ReviewStorage = new();
+        public static readonly TicketStorage TicketStorage = new();
+    }
+```
+
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними (см. рисунок 4).
 <p align="center">
