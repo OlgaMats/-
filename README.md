@@ -213,7 +213,86 @@ public static class Storage
         public static readonly TicketStorage TicketStorage = new();
     }
 ```
+Разработали набор web-методов, включая 4 базисные опрации CRUD, для каждой сущности, отражающих предметную область. Примеры контроллеров для классов "Автор" и "Вопросы" представлены на листингах 5 и 6.
+Листинг 5 - Контроллер для класса "Автор"
+```csharp
+{
+    [ApiController]
+    [Route("/author")]
+    public class AuthorController : ControllerBase
+    {
+        [HttpPut]
+        public Author Create(Author author)
+        {
+            Storage.AuthorStorage.Create(author);
+            return Storage.AuthorStorage.Read(author.AuthorId);
+        }
 
+        [HttpGet]
+        public Author Read(int authorId)
+        {
+            return Storage.AuthorStorage.Read(authorId);
+        }
+
+        [HttpPatch]
+        public Author Update(int authorId, Author newAuthor)
+        {
+           return Storage.AuthorStorage.Update(authorId,newAuthor);
+        }
+
+        [HttpDelete]
+        public bool Delete(int authorId)
+        {
+            return Storage.AuthorStorage.Delete(authorId);
+        }
+
+        [HttpGet("RegAuthors")]
+        public string RegAuthors(string str)
+        {
+            return str;// "Метод регистрации на выставке"
+        }
+
+        [HttpGet("Transfer")]
+        public string Transfer(string str)
+        {
+            return str;//"Метод передачи экспонатов"
+        }
+    }  
+}
+```
+Листинг 6 - Контроллер для класса "Вопросы"
+```csharp
+{
+    [ApiController]
+    [Route("/question")]
+    public class QuestionController : ControllerBase
+    {
+        [HttpPut]
+        public Question Create(Question question)
+        {
+            Storage.QuestionStorage.Create(question);
+            return question;// Метод создания
+        }
+
+        [HttpGet]
+        public Question Read(int questionId)
+        {
+            return Storage.QuestionStorage.Read(questionId);// Метод чтения
+        }
+
+        [HttpPatch]
+        public Question Update(int questionId, Question newQuestion)
+        {
+            return Storage.QuestionStorage.Update(questionId, newQuestion);
+        }
+
+        [HttpDelete]
+        public bool Delete(int questionId)
+        {
+            return Storage.QuestionStorage.Delete(questionId);
+        }
+    }
+    ```
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними (см. рисунок 4).
 <p align="center">
