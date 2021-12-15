@@ -292,8 +292,7 @@ public static class Storage
             return Storage.QuestionStorage.Delete(questionId);
         }
     }
-    ```  
-    
+```   
 ## 4 Тестирование <a name="тестирование"></a>
 После запуска программы открывается страница Swagger UI со списком сущностей и операций над ними (см. рисунок 4).
 <p align="center">
